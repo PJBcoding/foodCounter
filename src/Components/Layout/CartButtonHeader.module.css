@@ -1,0 +1,88 @@
+.btn {
+    background-color: rgba(113, 91, 20, 0.345);
+    color: rgb(83, 69, 55);
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    border: navajowhite;
+    padding: 7px 17px;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    align-items: center;
+    border-radius: 79px;
+    font-weight: bold;
+    gap: 7px;
+
+
+}
+
+.badge {
+
+    /*  background-color: rgba(32, 25, 25, 0.326); */
+    background-color: rgba(121, 87, 9, 0.481);
+    border-radius: 12px;
+    padding: 2px 15px;
+    color: #fff;
+    font-weight: 600;
+
+}
+
+.btn:hover .badge,
+.btn:active .badge {
+    background-color: #cece14;
+}
+
+.bump {
+    animation: bump 300ms ease-out;
+}
+
+@keyframes bump {
+    0% {
+        transform: scale(1);
+    }
+
+    10% {
+        transform: scale(0.9);
+    }
+
+    30% {
+        transform: scale(1.7);
+    }
+
+    50% {
+        transform: scale(1.15);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+/* .btn {
+    color: #565849;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    background-color: rgb(215, 205, 17);
+    border: none;
+    align-self: center;
+    border-radius: 12px;
+    padding: 12px 35px;
+    box-shadow: 0 2.5px 5px rgba(0, 0, 0, 0.546);
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.btn:hover {
+    background-color: rgb(234, 224, 31);
+    transform: translateY(-3px);
+    box-shadow: 0 7.5px 15px rgba(0, 0, 0, 0.546);
+}
+
+.btn:active {
+    background-color: rgb(215, 207, 39);
+    transform: translateY(2px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.546);
+} */

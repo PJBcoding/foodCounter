@@ -1,0 +1,8 @@
+.cartIcon {
+    width: 23px;
+    height: 23px;
+    stroke: rgb(253, 250, 255);
+    stroke-width: 1px;
+    display: flex;
+    align-items: center;
+}

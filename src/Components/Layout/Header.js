@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
 import styles from './Header.module.css';
 import food from '../../assets/food.jpg';
+import CartButtonHeader from './CartButtonHeader'
 const Header = () => {
     return (
         <Fragment>
@@ -9,7 +10,7 @@ const Header = () => {
                 <div className={`${styles.header}`}>
 
                     <h1> foodCounter</h1>
-                    <button className={styles.btn}>Cart</button>
+                    <CartButtonHeader />
                 </div>
 
             </header>

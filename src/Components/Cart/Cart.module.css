@@ -1,0 +1,49 @@
+.cart-items {
+    font-family: 'Maven Pro', sans-serif;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    max-height: 20rem;
+    overflow: auto;
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.actions {
+    font-family: 'Maven Pro', sans-serif;
+    text-align: right;
+}
+
+.actions button {
+    font: inherit;
+    font-family: 'Maven Pro';
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid #c8cb07;
+    padding: 0.5rem 2rem;
+    border-radius: 25px;
+    margin-left: 1rem;
+}
+
+.actions button:hover,
+.actions button:active {
+    background-color: #d8db0c;
+    border-color: #d8db0c;
+    color: rgb(17, 14, 14);
+}
+
+.actions .button--alt {
+    color: #bdbb30;
+}
+
+.actions .button {
+    background-color: #bdbb30;
+    color: white;
+}
