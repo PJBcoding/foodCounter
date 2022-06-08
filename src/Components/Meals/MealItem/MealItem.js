@@ -1,9 +1,24 @@
-import React from 'react'
-import styles from './MealItem.module.css'
-import MealItemForm from './MealItemForm'
-const MealItem = (props) => {
+import React, { useContext } from 'react';
+import styles from './MealItem.module.css';
+import MealItemForm from './MealItemForm';
+import CartContext from '../../../store/CartContext';
 
-    const formated_price = `$${props.price.toFixed(2)} `
+const MealItem = (props) => {
+    const cart_Ctx = useContext(CartContext);
+    const formated_price = `₹ ${props.price.toFixed(2)} `
+
+    const onAddToCartHandler = (itemCount_to_be_received_from_MealItemForm_component) => {
+
+        console.log('The item count is  :' + itemCount_to_be_received_from_MealItemForm_component);
+
+        cart_Ctx.addItem({
+            id: props.id,
+            name: props.name,
+            itemcount: itemCount_to_be_received_from_MealItemForm_component,
+            price: props.price,
+        })
+
+    }
     return (
         <li className={styles.meal}>
             <div>
@@ -12,10 +27,10 @@ const MealItem = (props) => {
                 <div className={styles.price}>{formated_price}</div>
             </div>
             <div>
-                <MealItemForm id={props.id} />
+                <MealItemForm id={props.id} onAddToCart={onAddToCartHandler} />
             </div>
         </li>
     )
 }
 
-export default MealItem
+export default MealItem;

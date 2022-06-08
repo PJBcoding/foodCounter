@@ -21,6 +21,16 @@
     animation: slide-down 300ms ease-out forwards;
 }
 
+.modalclose {
+    animation: slide-up 700ms ease-out forwards;
+}
+
+.backdropClose {
+    opacity: 0;
+    z-index: -700;
+
+}
+
 @media (min-width: 768px) {
     .modal {
         width: 40rem;
@@ -37,5 +47,17 @@
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+@keyframes slide-up {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateY(-6rem);
     }
 }
