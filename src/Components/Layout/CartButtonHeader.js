@@ -38,4 +38,4 @@ const CartButtonHeader = (props) => {
     )
 }
 
-export default CartButtonHeader
+export default CartButtonHeader;
